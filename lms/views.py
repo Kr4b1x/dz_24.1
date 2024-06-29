@@ -3,7 +3,7 @@ from rest_framework.generics import CreateAPIView, ListAPIView, RetrieveAPIView,
 from rest_framework.permissions import IsAuthenticated
 
 from lms.models import Course, Lesson
-from lms.permissions import IsModerator, IsOwner
+from user.permissions import IsModerator, IsOwner
 from lms.serializers import CourseSerializer, LessonSerializer
 
 
